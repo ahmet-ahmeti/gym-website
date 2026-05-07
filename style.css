@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+/* section scrolling */
+
+html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+#section1 {
+    height: 100vh;
+    position: relative;
+    scroll-snap-align: start;
+}
+
+#section2 {
+    height: 100vh;
+    position: relative;
+    scroll-snap-align: start;
+    background-color: #fffefe;
+}
+
+#section3 {
+    height: 100vh;
+    position: relative;
+    scroll-snap-align: start;
+    background-color: #656565;
+}
+
+/* section 1 bg image */
+
+#bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    user-select: none;
+    pointer-events: none;
+    object-fit: cover;
+}
+
+/* HEADER */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 4.5rem;
+    background-color: black;
+    transition: all 0.5s;
+    border-bottom-width: 0.7px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(78, 78, 78);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#header:hover {
+    box-shadow: 0 5px 3px rgba(59, 0, 0, 0.739);
+    border-bottom-color: rgb(59, 0, 0);
+}
+
+#hamburger-button {
+    border: none;
+    background-color: black;
+    cursor: pointer;
+}
+
+#logo-button {
+    border: none;
+    color: white;
+    font-size: 40px;
+    background-color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#shopping-cart-button {
+    border: none;
+    background-color: black;
+    cursor: pointer;
+    align-items: center;
+}
+
+/* SIDEBAR */
+
+#sidebar {
+    position: fixed;
+    right: 0;
+    top: 4.5rem;
+    bottom: 0;
+    width: 15rem;
+    border-top-style: solid;
+    border-top-width: 0.7px;
+    border-top-color: rgb(78, 78, 78);
+    background-color: black;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 100;
+}
+
+
+#sidebar.open {
+    transform: translateX(0);
+}
+
+#overlay {
+    position: fixed;
+    top: 4.5rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 99;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+/*  */
+
+#main-page {
+    padding-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+#main-page-left {
+    padding-top: 1.5rem;
+    color: white;
+    position: relative;
+    padding-left: 2rem;
+    user-select: none;
+    z-index: inherit;
+}
+
+h1 {
+    font-size: 6rem;
+    max-width: 40px;
+    line-height:  90px;
+}
+
+h2 {
+    color: gray;
+    font-size: 1.5rem;
+}
+
+#main-page-right {
+    z-index: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    margin-right: 2rem;
+}
+
+#view-progress-button {
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-width: 0.9px;
+    border-color: rgb(78, 78, 78);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 20px 80px;
+    transition: all 0.5s;
+}
+
+#view-progress-button:hover {
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 25px rgba(255, 255, 255, 0.5);
+    text-shadow: 0px 1px 20px rgba(255, 255, 255, 0.5);;
+}
+
+#start-training-button {
+    background-color: rgb(210, 0, 0);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 20px 80px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: margin 0.5s; 
+}
+
+#start-training-button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: white;
+    transition: width 0.5s ease;
+}
+
+#start-training-button:hover {
+    margin-bottom: 10px;
+}
+
+#start-training-button:hover::after {
+    width: 100%;
+}
+
+/* CAROUSEL */
+
+.carousel {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
+    bottom: 4rem;
+}
+
+.track {
+    filter: grayscale(1);
+    display: flex;
+    width: max-content;
+}
+
+.slide {
+    width: 300px;
+    height: 15rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: block;
+    object-fit: cover;
+}
+
