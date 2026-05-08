@@ -15,6 +15,10 @@ body {
     background-color: black;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* section scrolling */
 
 html {
@@ -30,10 +34,10 @@ html {
 }
 
 #section2 {
-    height: 100vh;
+    height: 150vh;
     position: relative;
     scroll-snap-align: start;
-    background-color: #fffefe;
+    background-color: rgb(17, 17, 17);
 }
 
 #section3 {
@@ -119,11 +123,42 @@ html {
     transform: translateX(100%);
     transition: transform 0.3s ease;
     z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
 }
 
 
 #sidebar.open {
     transform: translateX(0);
+}
+
+#sidebar-buttons-container {
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    align-items: center;
+}
+
+.sidebar-buttons {
+    color: white;
+    border: none;
+    width: 15rem;
+    background-color: black;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.sidebar-buttons:hover {
+    border-bottom-width: 0.7px;
+    border-bottom-color: rgb(78, 78, 78);
+    border-bottom-style: solid;
+    box-shadow: 0 4px 6px rgba(78, 78, 78, 0.3);
+    z-index: 100;
 }
 
 #overlay {
@@ -158,9 +193,12 @@ html {
     padding-top: 1.5rem;
     color: white;
     position: relative;
-    padding-left: 2rem;
-    user-select: none;
+    margin-left: 2rem;
     z-index: inherit;
+    border-bottom-style: solid;
+    border-bottom-width: 1.5px;
+    border-bottom-color: rgb(42, 42, 42);
+    padding-bottom: 1rem;
 }
 
 h1 {
@@ -184,7 +222,7 @@ h2 {
     margin-right: 2rem;
 }
 
-#view-progress-button {
+#view-programs-button {
     background-color: black;
     color: white;
     border-style: solid;
@@ -196,7 +234,7 @@ h2 {
     transition: all 0.5s;
 }
 
-#view-progress-button:hover {
+#view-programs-button:hover {
     margin-bottom: 10px;
     box-shadow: 0px 3px 25px rgba(255, 255, 255, 0.5);
     text-shadow: 0px 1px 20px rgba(255, 255, 255, 0.5);;
@@ -207,6 +245,7 @@ h2 {
     color: white;
     border: none;
     font-size: 2rem;
+    text-decoration: none;
     cursor: pointer;
     padding: 20px 80px;
     position: relative;
@@ -216,7 +255,7 @@ h2 {
 }
 
 #start-training-button::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -226,13 +265,14 @@ h2 {
     transition: width 0.5s ease;
 }
 
+#start-training-button:hover::after {
+    width: 100%;
+}
+
 #start-training-button:hover {
     margin-bottom: 10px;
 }
 
-#start-training-button:hover::after {
-    width: 100%;
-}
 
 /* CAROUSEL */
 
@@ -258,5 +298,101 @@ h2 {
     flex-shrink: 0;
     display: block;
     object-fit: cover;
+}
+
+/* SECTION 2 */
+
+#section2-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 7rem;
+    margin-left: 2rem;
+}
+
+h3 {
+    color: white;
+    font-size: 4rem;
+    width: 300px;
+    line-height: 70px;
+}
+
+h4 {
+    margin-top: 1rem;
+    color: gray;
+    font-size: 1.5rem;
+}
+
+#programs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.programs-grid-items {
+    position: relative;
+    border-right-style: solid;
+    border-right-color: rgb(42, 42, 42);
+    border-right-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(42, 42, 42);
+    border-bottom-width: 1px;
+    padding-top: 3rem;
+    height: 23rem;
+    font-size: 1rem;
+    cursor: pointer;}
+
+.programs-grid-items:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.programs-grid-items::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(170, 0, 0);
+    transition: width 0.5s ease;
+}
+
+.programs-grid-items:hover::after {
+    width: 100%;
+}
+
+.program-card {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    transition: all 0.7s;
+}
+
+.program-card h5 {
+    font-size: 2rem;
+    line-height: 50px;
+}
+
+.program-card p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    max-width: 18rem;
+}
+
+.program-card button {
+    margin-top: 2rem;
+    border: none;
+    color: white;
+    background-color: rgb(170, 0, 0);
+    padding: 0.7rem 2.5rem;
+    font-size: 2rem;
+    margin-top: auto;
+    margin-bottom: 3rem;
+    cursor: pointer;
 }
 

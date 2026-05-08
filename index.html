@@ -30,14 +30,16 @@
     </header>
 
     <nav id="sidebar">
-        <div>
-            1
-        </div>
-        <div>
-            2
-        </div>
-        <div>
-            3
+        <div id="sidebar-buttons-container">
+            <button class="sidebar-buttons">
+                Shop
+            </button>
+            <button class="sidebar-buttons">
+                Kontakt
+            </button>
+            <button class="sidebar-buttons">
+                Equipment
+            </button>
         </div>
     </nav>
 
@@ -54,9 +56,11 @@
                 </h2>
             </div>
             <div id="main-page-right">
-                <button id="view-progress-button">
-                    View Programs
-                </button>
+                <a href="#section2">
+                    <div id="view-programs-button">
+                        View Programs
+                    </div>
+                </a>
                 <button id="start-training-button">
                     Start training &#8594;
                 </button>
@@ -79,7 +83,65 @@
         </div>
     </section>
     <section id="section2">
+        <div id="section2-text">
+            <h3 id="section2-main-text">
+                Programet e Trajnimit
+            </h3>
+            <h4 id="section2-under-text">
+                Kemi një program për çdo person!
+            </h4>
+        </div>
+        <div id="programs-grid">
+            <div class="programs-grid-items">
+                <div class="program-card">
+                    <h5 id="card-top-text-1">Program për Humbje Peshe</h5>
+                    <p id="card-middle-text-1">Kardio, djegie kalorish dhe plan ushqimor.</p>
+                    <p id="card-bottom-text-1" style="color: gray;"></p>
+                    <button id="card-button-1" onclick="shikoProgramin(1);">Shiko Programin</button>
+                </div>
+            </div>
+            <div class="programs-grid-items">
+                <div class="program-card">
+                    <h5 id="card-top-text-2">Program për Ndërtim Muskujsh</h5>
+                    <p id="card-middle-text-2">Stërvitje force dhe rritje mase muskulore.</p>
+                    <p id="card-bottom-text-2" style="color: gray;"></p>
+                    <button id="card-button-2" onclick="shikoProgramin(2);">Shiko Programin</button>
+                </div>
+            </div>
+            <div class="programs-grid-items">
+                <div class="program-card">
+                    <h5 id="card-top-text-3">Program për Fillestarë</h5>
+                    <p id="card-middle-text-3">Ushtrime bazike për fillimin e fitness-it.</p>
+                    <p id="card-bottom-text-3" style="color: gray;"></p>
+                    <button id="card-button-3" onclick="shikoProgramin(3);">Shiko Programin</button>
+                </div>
+            </div>
+            <div class="programs-grid-items">
+                <div class="program-card">
+                    <h5 id="card-top-text-4">Program Powerlifting</h5>
+                    <p id="card-middle-text-4">Squat, Bench Press dhe Deadlift.</p>
+                    <p id="card-bottom-text-4" style="color: gray;"></p>
+                    <button id="card-button-4" onclick="shikoProgramin(4);">Shiko Programin</button>
+                </div>
+            </div>
+            <div class="programs-grid-items">
+                <div class="program-card">
+                    <h5 id="card-top-text-5">Program për Atletë</h5>
+                    <p id="card-middle-text-5">Shpejtësi, forcë dhe qëndrueshmëri.</p>
+                    <p id="card-bottom-text-5" style="color: gray;"></p>
+                    <button id="card-button-5" onclick="shikoProgramin(5);">Shiko Programin</button>
 
+                </div>
+            </div>
+            <div class="programs-grid-items">
+                <div class="program-card">
+                    <h5 id="card-top-text-6">Program Yoga & Mobility</h5>
+                    <p id="card-middle-text-6">Stretching dhe rikuperim i trupit.</p>
+                    <p id="card-bottom-text-6" style="color: gray;"></p>
+                    <button id="card-button-6" onclick="shikoProgramin(6);">Shiko Programin</button>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="section3">
 
