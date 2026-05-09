@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
-    <title>GYM</title>
+    <title>IRON FORGE</title>
 </head>
 <body>
     <header id="header">
@@ -14,9 +14,6 @@
             <a href="#section1" id="logo-button">
                 IRON <span style="color: rgb(210, 0, 0);">FORGE</span>
             </a>
-        </div>
-        <div>
-            <button id="shopping-cart-button"></button>
         </div>
         <div id="toggle-button">
             <button id="hamburger-button">
@@ -57,13 +54,15 @@
             </div>
             <div id="main-page-right">
                 <a href="#section2">
-                    <div id="view-programs-button">
+                    <button id="view-programs-button">
                         View Programs
-                    </div>
+                    </button>
                 </a>
-                <button id="start-training-button">
-                    Start training &#8594;
-                </button>
+                <a href="#section3">
+                    <button id="start-training-button">
+                        Start training &#8594;
+                    </button>
+                </a>
             </div>
         </div>
         <img src="/images/background.png" alt="" id="bg-image">
@@ -144,8 +143,85 @@
         </div>
     </section>
     <section id="section3">
-
+        <div id="subscription-container">
+            <div id="subscription-1">
+                <h6 class="subs-title">
+                    Kalim Ditor
+                </h6>
+                <div class="subs-price">
+                    <p>3.99&euro; / ditë</p>
+                </div>
+                <div class="subs-desc">
+                    <p>Perfekt për një stërvitje të shpejtë pa abonim afatgjatë.</p>
+                </div>
+                <div>
+                    <p>Përfitimet:</p>
+                    <ul class="subs-list">
+                        <li>Qasje në të gjitha pajisjet</li>
+                        <li>Dush & garderobë</li>
+                        <li>Wi-Fi falas</li>
+                        <li>Pa kontratë</li>
+                    </ui>
+                </div>
+                    <button class="subs-button" id="subs-button-1">
+                        Fillo Sot
+                    </button>                
+            </div>
+            <div id="subscription-2">
+                <p id="most-poupular">
+                    Më e Popullarizuara
+                </p>
+                <h6 class="subs-title">
+                    Abonim Mujor
+                </h6>
+                <div class="subs-price">
+                    <p>24.99&euro; / muaj</p>
+                </div>
+                <div class="subs-desc">
+                    <p>Ideale për stërvitje të rregullta dhe progres konstant.</p>
+                </div>
+                <div>
+                    <p>Përfitimet:</p>
+                    <ui class="subs-list">
+                        <li>Qasje e pakufizuar</li>
+                        <li>Program bazik stërvitjeje</li>
+                        <li>Zona cardio & fitness</li>
+                        <li>Mbështetje nga trajnerët</li>
+                    </ui>
+                </div>
+                <button class="subs-button" id="subs-button-2">
+                    Bëhu Anëtar
+                </button>
+            </div>
+            <div id="subscription-3">
+                <h6 class="subs-title">
+                    Abonim Vjetor
+                </h6>
+                <div class="subs-price">
+                    <p>249.99&euro; / vit</p>
+                </div>
+                <div class="subs-desc">
+                    <p>Zgjedhja më ekonomike për transformim afatgjatë.</p>
+                </div>
+                <div>
+                    <p>Përfitimet:</p>
+                    <ul class="subs-list">
+                        <li>Gjithçka nga plani mujor</li>
+                        <li>2 muaj falas</li>
+                        <li>Prioritet në klasa grupore</li>
+                        <li>Konsultim fitness falas</li>
+                    </ul>
+                </div>
+                <button class="subs-button" id="subs-button-3">
+                    Bëhu Anëtar
+                </button>
+            </div>
+        </div>
     </section>
+
+    <div id="subs-success">
+        &check; U abonuat me sukses!
+    </div>
 
     <script src="script.js"></script>
 </body>

@@ -19,7 +19,7 @@ a {
     text-decoration: none;
 }
 
-/* section scrolling */
+/* SECTION SCROLLING */
 
 html {
     scroll-snap-type: y mandatory;
@@ -44,10 +44,10 @@ html {
     height: 100vh;
     position: relative;
     scroll-snap-align: start;
-    background-color: #656565;
+    background-color: black;
 }
 
-/* section 1 bg image */
+/* SECTION 1 BG IMAGE */
 
 #bg-image {
     position: absolute;
@@ -69,7 +69,8 @@ html {
     justify-content: space-between;
     padding: 0 2rem;
     height: 4.5rem;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(12px);
     transition: all 0.5s;
     border-bottom-width: 0.7px;
     border-bottom-style: solid;
@@ -88,7 +89,7 @@ html {
 
 #hamburger-button {
     border: none;
-    background-color: black;
+    background-color: transparent;
     cursor: pointer;
 }
 
@@ -96,16 +97,9 @@ html {
     border: none;
     color: white;
     font-size: 40px;
-    background-color: black;
+    background-color: transparent;
     cursor: pointer;
     text-decoration: none;
-}
-
-#shopping-cart-button {
-    border: none;
-    background-color: black;
-    cursor: pointer;
-    align-items: center;
 }
 
 /* SIDEBAR */
@@ -119,7 +113,8 @@ html {
     border-top-style: solid;
     border-top-width: 0.7px;
     border-top-color: rgb(78, 78, 78);
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(12px);
     transform: translateX(100%);
     transition: transform 0.3s ease;
     z-index: 100;
@@ -145,19 +140,18 @@ html {
     color: white;
     border: none;
     width: 15rem;
-    background-color: black;
+    background-color: transparent;
     padding: 2rem 0;
     font-size: 1.5rem;
     letter-spacing: 1.5px;
     cursor: pointer;
-    transition: all 0.7s;
 }
 
 .sidebar-buttons:hover {
     border-bottom-width: 0.7px;
     border-bottom-color: rgb(78, 78, 78);
     border-bottom-style: solid;
-    box-shadow: 0 4px 6px rgba(78, 78, 78, 0.3);
+    box-shadow: 0 4px 8px rgba(78, 78, 78, 0.3);
     z-index: 100;
 }
 
@@ -180,7 +174,7 @@ html {
 }
 
 
-/*  */
+/* SECTION 1 */
 
 #main-page {
     padding-top: 6rem;
@@ -198,7 +192,7 @@ html {
     border-bottom-style: solid;
     border-bottom-width: 1.5px;
     border-bottom-color: rgb(42, 42, 42);
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 h1 {
@@ -293,7 +287,7 @@ h2 {
 
 .slide {
     width: 300px;
-    height: 15rem;
+    height: 16rem;
     overflow: hidden;
     flex-shrink: 0;
     display: block;
@@ -301,6 +295,16 @@ h2 {
 }
 
 /* SECTION 2 */
+
+@keyframes slideUp {
+    from {opacity: 0; transform: translateY(12px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.animate {
+    animation: slideUp 0.5s ease;
+}
+
 
 #section2-text {
     display: flex;
@@ -382,6 +386,7 @@ h4 {
     margin-top: 2rem;
     font-size: 1.5rem;
     max-width: 18rem;
+    word-spacing: 1px;
 }
 
 .program-card button {
@@ -396,3 +401,152 @@ h4 {
     cursor: pointer;
 }
 
+/* SECTION 3 */
+
+#subscription-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 7.5rem;
+}
+
+#subscription-1 {
+    background-color: rgb(17, 17, 17);
+    color: white;
+    border-style: solid;
+    border-color: rgb(42, 42, 42);
+    border-width: 1px;
+    height: 35rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+#subscription-1 button {
+    background-color: transparent;
+    border-style: solid;
+    border-color: rgb(55, 55, 55);
+    border-width: 1px;
+    transition: background-color 0.2s;
+}
+
+#subscription-1 button:hover {
+    background-color: rgb(170, 0, 0);
+}
+
+#subscription-1:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+#subscription-2 {
+    background-color: rgb(40, 40, 40);
+    color: white;
+    border-style: solid;
+    border-color: rgb(42, 42, 42);
+    border-width: 1px;
+    height: 35rem;
+    width: 25rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-top-style: solid;
+    border-top-width: 8px;
+    border-top-color: rgb(210, 0, 0);
+    margin-bottom: 3rem;
+}
+
+#subscription-3 {
+    background-color: rgb(17, 17, 17);
+    color: white;
+    border-style: solid;
+    border-color: rgb(42, 42, 42);
+    border-width: 1px;    
+    height: 35rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+#subscription-3 button {
+    background-color: transparent;
+    border-style: solid;
+    border-color: rgb(55, 55, 55);
+    border-width: 1px;
+    transition: background-color 0.3s;
+}
+
+#subscription-3 button:hover {
+    background-color: rgb(170, 0, 0);
+}
+
+#subscription-3:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+#most-poupular {
+    position: absolute;
+    top: -1.65rem;
+    left: 2rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5)
+}
+
+.subs-title {
+    font-size: 2.5rem;
+}
+
+.subs-price {
+    font-size: 2rem;
+}
+.subs-desc {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.subs-list {
+    color: gray;
+    line-height: 2rem;
+}
+
+.subs-button {
+    font-size: 3rem;
+    color: white;
+    padding: 0.7rem 4rem;
+    background-color: rgb(170, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+#subs-success {
+    position: fixed;
+    z-index: 101;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-size: 1.2rem;
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: rgb(67, 200, 67);
+    width: 15rem;
+    height: 5rem;
+    right: 0;
+    bottom: 3rem;
+    transform: translateX(150%);
+    transition: transform 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 2px;
+}
+
+#subs-success.slide {
+    transform: translateX(0);
+}
