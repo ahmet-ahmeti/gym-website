@@ -79,7 +79,7 @@ html {
     left: 0;
     top: 0;
     right: 0;
-    z-index: 100;
+    z-index: 101;
 }
 
 #header:hover {
@@ -110,9 +110,6 @@ html {
     top: 4.5rem;
     bottom: 0;
     width: 15rem;
-    border-top-style: solid;
-    border-top-width: 0.7px;
-    border-top-color: rgb(78, 78, 78);
     background-color: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(12px);
     transform: translateX(100%);
@@ -152,7 +149,6 @@ html {
     border-bottom-color: rgb(78, 78, 78);
     border-bottom-style: solid;
     box-shadow: 0 4px 8px rgba(78, 78, 78, 0.3);
-    z-index: 100;
 }
 
 #overlay {
@@ -549,4 +545,164 @@ h4 {
 
 #subs-success.slide {
     transform: translateX(0);
+}
+
+/* BMI-CALC */
+
+#BMI-main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* LEFT */
+
+#BMI-top-text {
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    top: -4.55rem;
+    left: 2.2rem;
+}
+
+#BMI-calc {
+    position: relative;
+    background-color: rgb(30, 30, 30);
+    margin-top: 12rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    width: 35rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#age-div p {
+    margin-top: 2rem;
+}
+
+#BMI-calc p {
+    color: gray;
+}
+
+#input-height {
+    margin-bottom: 1rem;
+}
+
+.input-info {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(55, 55, 55);
+    background-color: rgb(20, 20, 20);
+    width: 30rem;
+    height: 2.5rem;
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    outline: 2px solid transparent;
+    transition: outline 0.3s;
+}
+
+#input-gender {
+    height: 2.6rem;
+    width: 31rem;
+}
+
+
+.input-info::-webkit-inner-spin-button {
+    display: none;
+}
+
+.input-info:focus {
+    outline: 2px solid rgb(170, 0, 0);
+    outline-offset: -2px;
+}
+
+#dropdown-div {
+    color: rgb(230, 230, 230);
+}
+
+#dropdown-div p {
+    color: gray;
+}
+
+#BMI-calc button {
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+    padding: 0.5rem 6rem;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(170, 0, 0);
+    border: none;
+    transition: all 0.3s;
+}
+
+#BMI-calc button:hover {
+    background-color: rgb(180, 60, 60);
+}
+
+#BMI-calc button:active {
+    background-color: rgb(190, 80, 80);
+}
+
+/* RIGHT */
+
+#BMI-right {
+    margin-top: 11rem;
+    width: 35rem;
+    height: 25rem;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(55, 55, 55);
+}
+
+#bar {
+    position: relative;
+    background: linear-gradient(to right, rgb(5, 201, 240), rgb(66, 213, 66), yellow, red);
+    width: 95%;
+    height: 9px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#dot {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    border-radius: 100%;
+    height: 17px;
+    width: 17px;
+    transition: left 0.5s;
+    opacity: 0;
+}
+
+#bar.calc, #dot.calc {
+    opacity: 1;
+}
+
+#bmi-nr {
+    font-size: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bmi-text {
+    font-size: 1.4rem;
+    color: gray;
+    max-width: 25rem;
+}
+
+#bmi-nr-text {
+    font-size: 2.5rem;
 }

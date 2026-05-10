@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>IRON FORGE</title>
+</head>
+<body>
+    <header id="header">
+        <div>
+            <a href="index.html" id="logo-button">
+                IRON <span style="color: rgb(210, 0, 0);">FORGE</span>
+            </a>
+        </div>
+        <div id="toggle-button">
+            <button id="hamburger-button">
+                <svg width="35" height="35" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="11" rx="4" fill="#ffffff"/>
+                    <rect y="30" width="100" height="11" rx="4" fill="#ffffff"/>
+                    <rect y="60" width="100" height="11" rx="4" fill="#ffffff"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <!-- SIDEBAR -->
+    <nav id="sidebar">
+        <div id="sidebar-buttons-container">
+            <button class="sidebar-buttons">
+                Shop
+            </button>
+           <a href="BMI-calc.html">
+                <button class="sidebar-buttons">
+                    Llogarit BMI-në
+                </button>
+            </a>
+            <button class="sidebar-buttons">
+                Equipment
+            </button>
+        </div>
+    </nav>
+
+    <div id="overlay">
+
+    </div>
+
+    <main id="BMI-main-container">
+        <div id="BMI-calc">
+            <div id="BMI-top-text">
+                <span style="color: rgb(210, 0, 0); font-size: 5rem;">BMI</span> calculator
+            </div>
+            <div id="age-div">
+                <p>Age</p>
+                <input type="number" id="input-age" class="input-info" placeholder="P.sh. 25">
+            </div>
+            <div id="dropdown-div">
+                <p>Gjinija</p>
+                <select name="" id="input-gender" class="input-info">
+                    <option value="">Zgjidh gjininë</option>
+                    <option value="">Mashkull</option>
+                    <option value="">Femër</option>
+                    <option value="">Preferoj të mos deklaroj</option>
+                </select>
+            </div>
+            <div>
+                <p>Weight (kg)</p>
+                <input type="number" id="input-weight" class="input-info" placeholder="P.sh. 75">
+            </div>
+            <div>
+                <p>Height (cm)</p>
+                <input type="number" id="input-height" class="input-info" placeholder="P.sh. 175">       
+            </div>
+            <div>
+                <button id="BMI-button">
+                    Llogarit BMI-në
+                </button>
+            </div>
+        </div>
+        <div id="BMI-right">
+            <div id="bmi-nr">
+                <div id="bmi-nr-value"></div>
+                <p id="bmi-nr-text"></p>
+            </div>
+            <div id="bar">
+                <div id="dot">
+
+                </div>
+            </div>
+            <div id="bmi-text">
+
+            </div>
+        </div>
+    </main>
+
+    <script src="JavaScript/bmi.js"></script>
+</body>
+</html>
