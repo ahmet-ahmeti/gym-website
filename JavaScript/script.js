@@ -17,10 +17,10 @@ overlay.addEventListener("click", () => {
 // CAROUSEL
 
 const SLIDE_W = 300;
-const slides = document.querySelectorAll('.slide');
+const slides = document.getElementsByClassName("slide");
 const total = slides.length / 2;
 const LOOP_W = SLIDE_W * total;
-const track = document.getElementById('track');
+const track = document.getElementById("track");
 
 let pos = LOOP_W + 1;
 
@@ -118,35 +118,3 @@ button3.addEventListener("click", () => {
         popUp.classList.remove("slide");
     }, 3000);
 });
-
-// BMI CALC
-
-let bmi;
-const age = document.getElementById("input-age");
-const weight = document.getElementById("input-weight");
-const height = document.getElementById("input-height");
-const BMIbutton = document.getElementById("BMI-button");
-const dot = document.getElementById("dot")
-
-function BMIcalc(weight, height) {
-    const heightM = height / 100;
-    const BMI = weight / (heightM * heightM);
-    return BMI;
-}
-
-BMIbutton.addEventListener("click", () => {
-    if (age.value && weight.value && height.value) {
-        const weightValue = Number(weight.value);
-        const heightValue = Number(height.value);
-        bmi = BMIcalc(weightValue, heightValue);
-        const MIN = 10;
-        const MAX = 40;
-        let percent = (bmi - MIN) / (MAX - MIN) * 100;
-        if (percent > 100) percent = 100;
-        if (percent < 0) percent = 0;
-        dot.style.left = percent + "%";
-    }
-});
-
-
-

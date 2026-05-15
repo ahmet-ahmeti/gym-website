@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Bebas Neue", "Arial", "sans-serif";
     scroll-behavior: smooth;
 }
 
@@ -41,7 +41,7 @@ html {
 }
 
 #section3 {
-    height: 100vh;
+    height: 140vh;
     position: relative;
     scroll-snap-align: start;
     background-color: black;
@@ -72,9 +72,7 @@ html {
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(12px);
     transition: all 0.5s;
-    border-bottom-width: 0.7px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(78, 78, 78);
+    border-bottom: 0.7px solid rgb(78, 78, 78);
     position: fixed;
     left: 0;
     top: 0;
@@ -145,9 +143,7 @@ html {
 }
 
 .sidebar-buttons:hover {
-    border-bottom-width: 0.7px;
-    border-bottom-color: rgb(78, 78, 78);
-    border-bottom-style: solid;
+    border-bottom: 0.7px solid rgb(78, 78, 78);
     box-shadow: 0 4px 8px rgba(78, 78, 78, 0.3);
 }
 
@@ -169,6 +165,86 @@ html {
     pointer-events: all;
 }
 
+/* FOOTER */
+
+#footer * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 35%;
+    background-color: rgb(25, 25, 25);
+    border-top: 0.7px solid rgb(78, 78, 78);
+}
+
+#footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+}
+
+#footer-left-top {
+    color: white;
+    font-size: 2.5rem;
+}
+
+#footer-left-mid {
+    line-height: 1.2rem;
+    margin-top: 0.8rem;
+    color: gray;
+    max-width: 10rem;
+    text-align: left;
+    font-size: 0.7rem;
+}
+
+#footer-left-bottom {
+    margin-top: 1.5rem;
+}
+
+#footer-left-bottom button {
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid rgb(78, 78, 78);
+    background-color: rgb(28, 28, 28);
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+#footer-left-bottom button:hover {
+    color: rgb(200, 0, 0);
+    border-color: rgb(200, 0, 0);
+}
+
+#footer-right {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.7rem;
+}
+
+.footer-right-heading {
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 2.3px;
+}
+
+
+.footer-right-text {
+    margin-right: 13rem;
+    max-width: 10rem;
+    margin-left: -5rem;
+}
+
+.footer-right-text p {
+    margin-bottom: 1.6rem;
+    color: gray;
+}
 
 /* SECTION 1 */
 
@@ -404,6 +480,8 @@ h4 {
     align-items: center;
     justify-content: space-around;
     padding-top: 7.5rem;
+    margin-bottom: 2rem;
+
 }
 
 #subscription-1 {
@@ -553,6 +631,7 @@ h4 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 100vh;
 }
 
 /* LEFT */
@@ -568,7 +647,7 @@ h4 {
 #BMI-calc {
     position: relative;
     background-color: rgb(30, 30, 30);
-    margin-top: 12rem;
+    margin-top: 7rem;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(55, 55, 55);
@@ -651,7 +730,7 @@ h4 {
 /* RIGHT */
 
 #BMI-right {
-    margin-top: 11rem;
+    margin-top: 6rem;
     width: 35rem;
     height: 25rem;
     background-color: rgb(30, 30, 30);
@@ -705,4 +784,52 @@ h4 {
 
 #bmi-nr-text {
     font-size: 2.5rem;
+}
+
+/* ORARI */
+
+#orari-text{
+    color: white;
+    font-size: 3rem;
+}
+
+#orari-table-parent {
+    padding: 3rem;
+    background: rgb(0, 0, 0);
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+th {
+    background: rgb(0, 0, 0);
+    color: rgb(200, 0, 0);
+    font-size: 2rem;
+    text-align: left;
+    padding: 1rem 1rem;
+    border-bottom: 2px solid rgb(200, 0, 0);
+    border-right: 1px solid rgb(30, 30, 30);
+}
+
+td {
+    padding: 1rem 1rem;
+    border-right: 1px solid rgb(30, 30, 30);
+    border-bottom: 1px solid rgb(30, 30, 30);
+    font-size: 1.5rem;
+    vertical-align: top;
+    color: rgb(220, 220, 220);
+}
+
+tr:hover td {
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
 }
