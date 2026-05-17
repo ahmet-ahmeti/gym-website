@@ -17,6 +17,7 @@ overlay.addEventListener("click", () => {
 // BMI CALC
 
 let bmi;
+const bmiCalc = document.getElementById("BMI-calc");
 const age = document.getElementById("input-age");
 const weight = document.getElementById("input-weight");
 const height = document.getElementById("input-height");
@@ -33,7 +34,8 @@ function BMIcalc(weight, height) {
     return BMI;
 }
 
-BMIbutton.addEventListener("click", () => {
+bmiCalc.addEventListener("submit", (e) => {
+    e.preventDefault()
     if (age.value && weight.value && height.value) {
         const weightValue = Number(weight.value);
         const heightValue = Number(height.value);

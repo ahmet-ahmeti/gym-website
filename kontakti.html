@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>IRON FORGE</title>
+</head>
+<body style="background-color: rgb(17, 17, 17);">
+    <!-- HEADER -->
+    <header id="header">
+        <div>
+            <a href="index.html" id="logo-button">
+                IRON <span style="color: rgb(210, 0, 0);">FORGE</span>
+            </a>
+        </div>
+        <div id="toggle-button">
+            <button id="hamburger-button">
+                <svg width="35" height="35" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="11" rx="4" fill="#ffffff"/>
+                    <rect y="30" width="100" height="11" rx="4" fill="#ffffff"/>
+                    <rect y="60" width="100" height="11" rx="4" fill="#ffffff"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <!-- SIDEBAR -->
+    <nav id="sidebar">
+        <div id="sidebar-buttons-container">
+            <button class="sidebar-buttons">
+                Shop
+            </button>
+            <a href="BMI-calc.html">
+                <button class="sidebar-buttons">
+                    Llogarit BMI-në
+                </button>
+            </a>
+            <a href="orari.html">
+                <button class="sidebar-buttons">
+                    Orari
+                </button>
+            </a>
+            <a href="kontakti.html">
+                <button class="sidebar-buttons">
+                    Kontakti
+                </button>
+            </a>
+        </div>
+    </nav>
+
+    <div id="overlay">
+
+    </div>
+
+    <main id="kontakti-grid">
+        <div id="kontakti-left">
+            <div id="kontakti-left-text">
+                <p id="kontakti-left-text-top"><span style="margin-right: 9px; letter-spacing: -1px;">--------</span> GET IN TOUCH</p>
+                <p id="kontakti-left-text-mid">Le ta ndërtojmë trupin tënd së bashku</p>
+                <p id="kontakti-left-text-bottom">
+                    Pavarësisht nëse sapo po fillon, dëshiron të rikthehesh në formë apo të çosh performancën në nivel tjetër - ekipi ynë është këtu për ty.
+                </p>
+            </div>
+            <div id="kontakti-left-info-container">
+                <a href="mailto:info@ironforge.com">
+                <div id="kontakti-left-info">
+                    <div class="kontakti-left-info">
+                        <button class="kontakti-left-button">
+                            &#x2709;
+                        </button>
+                        <div> 
+                            <p class="kontakti-left-info-header">EMAIL</p>
+                                info@ironforge.com
+                        </div>
+                    </div>
+                    </a>
+                    <a href="tel:+383 44 123 456">
+                        <div class="kontakti-left-info">
+                            <button class="kontakti-left-button">
+                                &#x260F;
+                            </button>
+                            
+                                <div>
+                                    <p class="kontakti-left-info-header">TELEFONI</p>
+                                    <p>+383 44 123 456</p> 
+                                </div>
+                        </div>
+                    </a>
+                    <div class="kontakti-left-info" id="map-button">
+                        <button class="kontakti-left-button" style="padding-bottom: 2px;">
+                            &#x2316;
+                        </button>
+                        <div>
+                            <p class="kontakti-left-info-header">LOKACIONI</p>
+                            <p>Gjilan, Kosovë</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="iframe">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.036712337141!2d21.46179427616729!3d42.46950787118293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13548dc77c15ef01%3A0x8be4fe0d8cd480dc!2sUniversiteti%20Publik%20%22Kadri%20Zeka%22!5e0!3m2!1sen!2srs!4v1779048821437!5m2!1sen!2srs"
+                     width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div id="kontakti-right">
+            <div id="kontakti-form-text-top">
+                <p id="kontakti-form-text-top-1">Dërgo një mesazh</p>
+                <p id="kontakti-form-text-top-2">Do të të kontaktojmë brenda 24 orëve.</p>
+            </div>
+            <div>
+                <form id="kontakti-form">
+                    <div id="kontakti-form-edit">
+                        <div id="emri-dhe-mbiemri">
+                            <div id="kontakti-name">
+                                <p class="form-input-headers">Emri</p>
+                                <input type="text" id="kontakti-name-input" class="kontakti-form" placeholder="Ahmet">
+                            </div>
+                            <div id="kontakti-lname">
+                                <p class="form-input-headers">Mbiemri</p>
+                                <input type="text" id="kontakti-lname-input" class="kontakti-form" placeholder="Ahmeti">
+                            </div>
+                        </div>
+                        <div id="kontakti-email">
+                            <p class="form-input-headers">Email</p>
+                            <input type="email" class="kontakti-form" placeholder="shembull@email.com" id="kontakti-email-input">
+                        </div>
+                        <div id="kontakti-subject">
+                            <p class="form-input-headers">Subjekti</p>
+                            <select name="" id="subjekti-form" class="kontakti-form">
+                                <option value="0">Zgjidh subjektin</option>
+                                <option value="">Anëtarësim</option>
+                                <option value="">Trajnime</option>
+                                <option value="">Informata</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p class="form-input-headers">Mesazshi</p>
+                            <textarea name="" id="mesazhi-form" class="kontakti-form" placeholder="Shkruaj mesazhin tënd këtu. Na trego kërkesën ose pyetjen tënde."></textarea>
+                        </div>
+                        <div>
+                            <p style="color: red;" id="error-form"></p>
+                            <button type="submit" id="form-button">
+                                Dërgo mesazhin &#8594;
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div id="footer-left">
+            <div id="footer-left-top" style="font-family: 'Bebas Neue'; color: white;">IRON<span style="color: red; font-family: 'Bebas Neue';">FORGE</span></div>
+            <div id="footer-left-mid">
+                Një vend për stërvitje serioze, progres të qëndrueshëm dhe disiplinë të vërtetë. Hyr, puno fort, dil më i fortë.
+            </div>
+            <div id="footer-left-bottom">
+                <button>IG</button>
+                <button>TW</button>
+                <button>YT</button>
+                <button>TK</button>
+            </div>
+        </div>
+        <div id="footer-right">
+            <div class="footer-right-text">
+                <a href="index.html#section2"><p class="footer-right-heading" style="font-family: 'Bebas Neue'; color: white;">Programet</p></a>
+                <a href="index.html#section2"><p>Program për Fillestarë</p></a>
+                <a href="index.html#section2"><p>Program për Ndërtim Muskujsh</p></a>
+                <a href="index.html#section2"><p>Program për Humbje Peshe</p></a>
+                <a href="index.html#section2"><p>Program për Atletë</p></a>
+            </div>
+            <div class="footer-right-text">
+                <a href="#kontakti-grid"><p class="footer-right-heading" style="font-family: 'Bebas Neue'; color: white;">Kontakti</p></a>
+                <a href="#kontakti-grid"><p>Rr. “Zija Shemsiu”, Gjilan 60000, Kosovë</p></a>
+                <a href="#kontakti-grid"><p>+383 44 123 456</p></a>
+                <a href="#kontakti-grid"><p>info@ironforge.com</p></a>
+                <a href="#kontakti-grid"><p>Rreth Nesh</p></a>
+            </div>
+            <div class="footer-right-text">
+                <p class="footer-right-heading" style="font-family: 'Bebas Neue'; color: white;">Orari i punes</p></a>
+                <p>E Hënë - E Premte: 09:00 - 24:00</p>
+                <p>E Shtunë: 10:00 - 22:00</p>
+                <p>E Diel: 10:00 - 20:00</p>
+                <p>Dite Festive: 12:00 - 18:00</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JavaScript/kontakti.js"></script>
+</body>

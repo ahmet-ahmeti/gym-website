@@ -18,7 +18,7 @@ overlay.addEventListener("click", () => {
 
 const SLIDE_W = 300;
 const slides = document.getElementsByClassName("slide");
-const total = slides.length / 2;
+const total = slides.length / 3;
 const LOOP_W = SLIDE_W * total;
 const track = document.getElementById("track");
 
