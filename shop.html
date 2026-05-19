@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>IRON FORGE</title>
+</head>
+<body style="background-color: rgb(12, 12, 12);">
+    <!-- HEADER -->
+    <header id="header">
+        <div>
+            <a href="index.html" id="logo-button">
+                IRON <span style="color: rgb(210, 0, 0);">FORGE</span>
+            </a>
+        </div>
+        <div id="header-right-buttons">
+            <div id="shop-button-container">
+                <button id="shop-button-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="50" viewBox="0 0 680 420" fill="none" stroke="white" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="200,140 240,140 290,310 500,310 530,200 230,200"/>
+                        <circle cx="310" cy="360" r="24"/>
+                        <circle cx="480" cy="360" r="24"/>
+                    </svg>
+                </button>
+            </div>
+            <div id="toggle-button">
+                <button id="hamburger-button">
+                    <svg width="35" height="35" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="11" rx="4" fill="#ffffff"/>
+                        <rect y="30" width="100" height="11" rx="4" fill="#ffffff"/>
+                        <rect y="60" width="100" height="11" rx="4" fill="#ffffff"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- SIDEBAR -->
+    <nav id="sidebar">
+        <div id="sidebar-buttons-container">
+            <a href="shop.html">
+                <button class="sidebar-buttons">
+                    Shop
+                </button>
+            </a>
+            <a href="BMI-calc.html">
+                <button class="sidebar-buttons">
+                    Llogarit BMI-në
+                </button>
+            </a>
+            <a href="orari.html">
+                <button class="sidebar-buttons">
+                    Orari
+                </button>
+            </a>
+            <a href="kontakti.html">
+                <button class="sidebar-buttons">
+                    Kontakti
+                </button>
+            </a>
+        </div>
+    </nav>
+
+    <div id="shop-sidebar">
+        <div id="shop-cart-container">
+
+
+        </div>
+        <div id="purchase">
+            <button id="purchase-button">
+                Blej
+            </button>
+        </div>
+    </div>
+
+    <div id="overlay">
+
+    </div>
+
+    <main id="shop-main-container">
+        <div id="shop-header">
+            Gjithçka për <span style="color: rgb(210, 0, 0);">progres.</span>
+        </div>
+        <div id="shop-grid">
+            <div id="card-protein-vanilla" class="card-shop">
+                <div class="shop-image">
+                    <img src="images/shop-images/ProWheyVanilla.png" alt="Protein powder vanilla">
+                </div>
+                <div class="shop-card-mid">
+                    <p>Pro Whey Vanilje</p>
+                    <h5>Proteinë cilësore me shije vanilje për rikuperim dhe ndërtim muskujsh.</h5>
+                </div>
+                <div class="shop-card-bottom">
+                    <p>34.99 &euro;</p>
+                    <button id="protein-vanilla-button">Shto &#8594;</button>
+                </div>
+            </div>
+            <div id="card-protein-chocolate" class="card-shop">
+                <div class="shop-image">
+                    <img src="images/shop-images/ProWheyChocolate.png" alt="Protein powder chocolate">
+                </div>
+                <div class="shop-card-mid">
+                    <p>Pro Whey Çokollatë</p>
+                    <h5>Proteinë me shije çokollate dhe përthithje të shpejtë për performancë më të mirë.</h5>
+                </div>
+                <div class="shop-card-bottom">
+                    <p>34.99 &euro;</p>
+                    <button id="protein-chocolate-button">Shto &#8594;</button>
+                </div>
+            </div>
+            <div id="card-protein-raspberry" class="card-shop">
+                <div class="shop-image">
+                    <img src="images/shop-images/ProWheyRaspberry.png" alt="Protein powder raspberry">
+                </div>
+                <div class="shop-card-mid">
+                    <p>Pro Whey Mjedër</p>
+                    <h5>Shije freskuese mjedre me formulë ideale për mbështetje të muskujve.</h5>
+                </div>
+                <div class="shop-card-bottom">
+                    <p>36.99 &euro;</p>
+                    <button id="protein-raspberry-button">Shto &#8594;</button>
+                </div>
+            </div>
+            <div id="card-mass-gainer" class="card-shop">
+                <div class="shop-image">
+                    <img src="images/shop-images/MassGainer.png" alt="Mass gainer">
+                </div>
+                <div class="shop-card-mid">
+                    <p>Mass Gainer</p>
+                    <h5>Formulë me shumë kalori për rritje mase dhe forcë muskulore.</h5>
+                </div>
+                <div class="shop-card-bottom">
+                    <p>44.99 &euro;</p>
+                    <button id="mass-gainer-button">Shto &#8594;</button>
+                </div>
+            </div>
+            <div id="card-creatine" class="card-shop">
+                <div class="shop-image">
+                    <img src="images/shop-images/Creatine.png" alt="Creatine">
+                </div>
+                <div class="shop-card-mid">
+                    <p>Kreatinë</p>
+                    <h5>Rrit forcën, energjinë dhe performancën gjatë stërvitjeve intensive.</h5>
+                </div>
+                <div class="shop-card-bottom">
+                    <p>24.99 &euro;</p>
+                    <button id="creatine-button">Shto &#8594;</button>
+                </div>
+            </div>
+            <div id="card-pre-workout" class="card-shop">
+                <div class="shop-image">
+                    <img src="images/shop-images/PreWorkout.png" alt="Pre workout">
+                </div>
+                <div class="shop-card-mid">
+                    <p>Pre Workout</p>
+                    <h5>Formulë energjike për fokus dhe qëndrueshmëri maksimale në palestër.</h5>
+                </div>
+                <div class="shop-card-bottom">
+                    <p>29.99 &euro;</p>
+                    <button id="pre-workout-button">Shto &#8594;</button>
+                </div>
+            </div>
+            <div id="card-omega-3" class="card-shop">
+                <div class="shop-image">
+                    <img src="images/shop-images/Omega3.png" alt="Omega 3">
+                </div>
+                <div class="shop-card-mid">
+                    <p>Omega 3</p>
+                    <h5>Acide yndyrore esenciale për zemër të shëndetshme dhe rikuperim më të mirë.</h5>
+                </div>
+                <div class="shop-card-bottom">
+                    <p>18.99 &euro;</p>
+                    <button id="omega3-button">Shto &#8594;</button>
+                </div>
+            </div>
+            <div id="card-bcaa" class="card-shop">
+                <div class="shop-image">
+                    <img src="images/shop-images/BCAA.png" alt="BCAA">
+                </div>
+                <div class="shop-card-mid">
+                    <p>BCAA Kompleks</p>
+                    <h5>Aminoacide që ndihmojnë në rikuperim dhe zvogëlim të lodhjes muskulore.</h5>
+                </div>
+                <div class="shop-card-bottom">
+                    <p>27.99 &euro;</p>
+                    <button id="bcaa-button">Shto &#8594;</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="purchase-succsesful">
+        Blerja juaj u krye me sukses.
+    </div>
+
+    <div id="cart-full">
+        Cart is full
+    </div>
+
+    <footer id="footer">
+        <div id="footer-left">
+            <div id="footer-left-top" style="font-family: 'Bebas Neue'; color: white;">IRON<span style="color: red; font-family: 'Bebas Neue';">FORGE</span></div>
+            <div id="footer-left-mid">
+                Një vend për stërvitje serioze, progres të qëndrueshëm dhe disiplinë të vërtetë. Hyr, puno fort, dil më i fortë.
+            </div>
+            <div id="footer-left-bottom">
+                <button>IG</button>
+                <button>TW</button>
+                <button>YT</button>
+                <button>TK</button>
+            </div>
+        </div>
+        <div id="footer-right">
+            <div class="footer-right-text">
+                <a href="index.html#section2"><p class="footer-right-heading" style="font-family: 'Bebas Neue'; color: white;">Programet</p></a>
+                <a href="index.html#section2"><p>Program për Fillestarë</p></a>
+                <a href="index.html#section2"><p>Program për Ndërtim Muskujsh</p></a>
+                <a href="index.html#section2"><p>Program për Humbje Peshe</p></a>
+                <a href="index.html#section2"><p>Program për Atletë</p></a>
+            </div>
+            <div class="footer-right-text">
+                <a href="kontakti.html"><p class="footer-right-heading" style="font-family: 'Bebas Neue'; color: white;">Kontakti</p></a>
+                <a href="kontakti.html"><p>Rr. “Zija Shemsiu”, Gjilan 60000, Kosovë</p></a>
+                <a href="kontakti.html"><p>+383 44 123 456</p></a>
+                <a href="kontakti.html"><p>info@ironforge.com</p></a>
+                <a href="kontakti.html"><p>Rreth Nesh</p></a>
+            </div>
+            <div class="footer-right-text">
+                <p class="footer-right-heading" style="font-family: 'Bebas Neue'; color: white;">Orari i punes</p></a>
+                <p>E Hënë - E Premte: 09:00 - 24:00</p>
+                <p>E Shtunë: 10:00 - 22:00</p>
+                <p>E Diel: 10:00 - 20:00</p>
+                <p>Dite Festive: 12:00 - 18:00</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JavaScript/shop.js"></script>
+</body>
+</html>

@@ -88,11 +88,25 @@ html {
     border-bottom-color: rgb(59, 0, 0);
 }
 
+#header-right-buttons {
+    display: flex;
+    align-items: center;
+}
+
 #hamburger-button {
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
+
+#shop-button-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 0.9rem;
+    margin-right: 1rem;
+}
+
 
 #logo-button {
     border: none;
@@ -1017,3 +1031,284 @@ tr:hover td {
     background-color: rgb(200, 0, 0);
     border-color: rgb(200, 0, 0);
 }
+
+/* SHOP */
+
+#shop-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin-bottom: 8rem;
+}
+
+#shop-header {
+    color: white;
+    font-size: 4rem;
+    margin: 8rem 5rem 0rem;
+}
+
+#shop-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin: 0 5rem;
+}
+
+.card-shop {
+    height: 18rem;
+    background-color: rgb(30, 30, 30);
+    border: 1.5px solid transparent;
+    transition: border 0.3s;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.card-shop:hover {
+    border: 1.5px solid rgb(100, 100, 100);
+}
+
+.shop-image {
+    height: 9rem;
+    background-color: rgb(17, 17, 17);
+    margin: 0.6rem 0.6rem;
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.50);
+    border: 0.7px solid rgb(78, 78, 78);
+    display: flex;
+    align-items: center;
+}
+
+.shop-image img {
+    height: 85%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.shop-card-mid {
+    color: white;
+    margin-left: 1rem;
+}
+
+.shop-card-mid p {
+    font-size: 1.5rem;
+}
+
+.shop-card-mid h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: gray;
+}
+
+.shop-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1rem 0;
+    color: white;
+}
+
+.shop-card-bottom button {
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.8rem;
+    background-color: rgb(170, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.shop-card-bottom button:hover {
+    background-color: rgb(170, 70, 70);
+}
+
+/* SHOP SIDEBAR */
+
+#shop-sidebar {
+    position: fixed;
+    right: 0;
+    top: 4.5rem;
+    bottom: 0;
+    width: 20rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(12px);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#shop-sidebar.open {
+    transform: translateX(0);
+}
+
+#shop-cart-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.shop-cart-item {
+    background-color: rgb(40, 40, 40);
+    width: 18rem;
+    height: 7rem;
+    border: 0.7px solid rgb(78, 78, 78);
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.shop-cart-img {
+    width: 10rem;
+    height: 80%;
+    border-right: 1px solid rgb(78, 78, 78);
+    display: flex;
+    align-items: flex-start;
+    padding: 0 1rem;
+}
+
+.shop-cart-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.shop-cart-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.shop-cart-text {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.shop-cart-text p {
+    padding-left: 1rem;
+    max-width: 6rem;
+}
+
+.shop-cart-price {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.shop-cart-name {
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.remove-button {
+    border-left: 1px solid rgb(78, 78, 78);
+    padding-left: 1rem;
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.remove-button button {
+    color: gray;
+    background-color: transparent;
+    margin-right: 0.8rem;
+    font-family: 1.3rem;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.remove-button button:hover {
+    color: rgb(170, 0, 0);
+}
+
+#purchase {
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#purchase-button {
+    background-color: rgb(170, 0, 0);
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 8rem;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+#purchase-button:hover {
+    box-shadow: 0 2px 15px rgba(170, 0, 0, 0.8);
+}
+
+#totali {
+    font-size: 1rem;
+    color: white;
+}
+
+#total-price {
+    font: 1rem;
+    color: white;
+}
+
+#cart-full {
+    position: fixed;
+    z-index: 101;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-size: 1.2rem;
+    border-left: 5px solid rgb(170, 0, 0);
+    width: 15rem;
+    height: 5rem;
+    right: 0;
+    bottom: 3rem;
+    transform: translateX(150%);
+    transition: transform 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 2px;
+}
+
+#cart-full.slide {
+    transform: translateX(0);
+}
+
+#purchase-succsesful {
+    position: fixed;
+    z-index: 101;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-size: 1.2rem;
+    border-left: 5px solid rgb(67, 200, 67);
+    width: 15rem;
+    height: 5rem;
+    right: 0;
+    bottom: 3rem;
+    transform: translateX(150%);
+    transition: transform 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 2px;
+}
+
+#purchase-succsesful.slide {
+    transform: translateX(0);
+}
+
