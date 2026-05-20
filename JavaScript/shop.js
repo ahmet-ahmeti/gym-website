@@ -93,7 +93,7 @@ const bcaa = {
 };
 
 function renderCart() {
-    cartContainer.innerHTML = "";
+    cartContainer.innerHTML = ""; // Function to loop through the array and for each elemnt in the array adds the html seen below
 
     cart.forEach((item, i) => {
         cartContainer.innerHTML += `
@@ -115,12 +115,12 @@ function renderCart() {
     });
 }
 
-function removeFromCart(i) {
+function removeFromCart(i) { // function to remove element from array and calls renderCart again
     cart.splice(i, 1);
     renderCart();
 }
 
-proteinVanillaButton.addEventListener("click", () => {
+proteinVanillaButton.addEventListener("click", () => { // Adds obj to array and calls renderCart also checks if there is space for item
     if (cart.length < 4) {
         cart.push(proteinVanilla);
         renderCart();

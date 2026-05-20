@@ -4,22 +4,22 @@ const overlay = document.getElementById("overlay")
 const toggle = document.getElementById("toggle-button")
 
 
-toggle.addEventListener("click", () => {
+toggle.addEventListener("click", () => { // after clicking toggle a the classes on and off
     sidebar.classList.toggle("open")
     overlay.classList.toggle("active")
 });
 
 overlay.addEventListener("click", () => {
     sidebar.classList.remove("open")
-    overlay.classList.remove("active")
+    overlay.classList.remove("active") // after clicking remove classes
 });
 
 // MAP
 
-const mapButton = document.getElementById("map-button");
+const mapButton = document.getElementById("map-button"); 
 const iframe = document.getElementById("iframe");
 
-mapButton.addEventListener("click", () => {
+mapButton.addEventListener("click", () => { // toggles a class to the html element after click
     iframe.classList.toggle("show");
 })
 
@@ -33,7 +33,7 @@ const subject = document.getElementById("subjekti-form");
 const message = document.getElementById("mesazhi-form");
 const error = document.getElementById("error-form");
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e) => { // Validates form and adds the html written below when there are no mistakes
     e.preventDefault();
     if(firstName.value.length < 2 || lastName.value.length < 2 ||
         !email.value.includes("@") || !email.value.includes(".") || subject.value === "0" || message.value.length < 10) {

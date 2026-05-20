@@ -4,12 +4,12 @@ const overlay = document.getElementById("overlay")
 const toggle = document.getElementById("toggle-button")
 
 
-toggle.addEventListener("click", () => {
+toggle.addEventListener("click", () => { // after clicking toggle a the classes on and off
     sidebar.classList.toggle("open")
     overlay.classList.toggle("active")
 });
 
-overlay.addEventListener("click", () => {
+overlay.addEventListener("click", () => { // after clicking remove classes
     sidebar.classList.remove("open")
     overlay.classList.remove("active")
 });
@@ -24,7 +24,7 @@ const track = document.getElementById("track");
 
 let pos = LOOP_W + 1;
 
-function step() {
+function step() { // When it reaches the final loop it goes back to the first set of photos
     pos += 1;
 
     if (pos >= LOOP_W)pos -= LOOP_W;
@@ -42,7 +42,7 @@ function animateText(el, html, fontSize) {
   el.classList.add('animate');
 }
 
-function shikoProgramin(temp) {
+function shikoProgramin(temp) { // Function called with onclick that adds the html seen below onclick of button
     if (temp === 1) {
         animateText( document.getElementById("card-bottom-text-1"),
             "Ky program është i dizajnuar për humbje peshe dhe përmirësim të formës fizike përmes ushtrimeve kardio, djegies së kalorive dhe një plani të balancuar ushqimor. Programi përfshin stërvitje intensive që ndihmojnë në reduktimin e yndyrës, rritjen e energjisë dhe përmirësimin e qëndrueshmërisë fizike. Gjithashtu, " +
@@ -98,7 +98,7 @@ const button2 = document.getElementById("subs-button-2");
 const button3 = document.getElementById("subs-button-3");
 const popUp = document.getElementById("subs-success");
 
-button1.addEventListener("click", () => {
+button1.addEventListener("click", () => { // Shows a pop up after click that stays for 3 sec
     popUp.classList.add("slide");
     setTimeout(() => {
         popUp.classList.remove("slide");

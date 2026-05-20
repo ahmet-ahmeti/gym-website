@@ -4,12 +4,12 @@ const overlay = document.getElementById("overlay")
 const toggle = document.getElementById("toggle-button")
 
 
-toggle.addEventListener("click", () => {
+toggle.addEventListener("click", () => { // after clicking toggle a the classes on and off
     sidebar.classList.toggle("open")
     overlay.classList.toggle("active")
 });
 
-overlay.addEventListener("click", () => {
+overlay.addEventListener("click", () => { // after clicking remove classes
     sidebar.classList.remove("open")
     overlay.classList.remove("active")
 });
@@ -28,13 +28,13 @@ const bmiNr = document.getElementById("bmi-nr-value");
 const bmiNrText = document.getElementById("bmi-nr-text");
 const bmiText = document.getElementById("bmi-text");
 
-function BMIcalc(weight, height) {
+function BMIcalc(weight, height) { // BMI calculation
     const heightM = height / 100;
     const BMI = weight / (heightM * heightM);
     return BMI;
 }
 
-bmiCalc.addEventListener("submit", (e) => {
+bmiCalc.addEventListener("submit", (e) => {  // uses the BMIcalc based on result display diffrent html also validates form
     e.preventDefault()
     if (age.value && weight.value && height.value) {
         const weightValue = Number(weight.value);

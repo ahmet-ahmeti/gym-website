@@ -433,7 +433,8 @@ h4 {
     padding-top: 3rem;
     height: 23rem;
     font-size: 1rem;
-    cursor: pointer;}
+    cursor: pointer;
+}
 
 .programs-grid-items:hover {
     background-color: rgba(255, 255, 255, 0.08);
@@ -1312,3 +1313,773 @@ tr:hover td {
     transform: translateX(0);
 }
 
+@media (max-width: 766px) { 
+
+    /* SECTION 1 */
+
+    #main-page {
+        flex-direction: column;
+    }
+
+    #main-page-left {
+        padding-top: 0;
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #main-page-right {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    #view-programs-button {
+        padding: 10px 40px;
+        margin-bottom: 2rem;
+    }
+
+    #start-training-button {
+        padding: 10px 40px;
+        font-size: 1.7rem;
+    }
+    
+    .carousel {
+        height: 4rem;
+        bottom: 3rem;
+    }
+
+    #section1 {
+        height: 130vh;
+    }
+
+    /* SECTION 2 */
+
+    #section2 {
+        height: fit-content;
+    }
+
+    #yoga-card {
+        margin-bottom: 13rem;
+    }
+
+    #programs-grid {
+        grid-template-columns: 1fr;
+        width: 90%;
+        height: auto;
+        margin-left: 1rem;
+        row-gap: 0.5rem;
+    }
+
+    .programs-grid-items {
+        height: 25rem;
+        border-left: 0.7px solid rgb(78, 78, 78);
+    }
+
+    /* SECTION 3 */
+
+    #subscription-container {
+        flex-direction: column;
+    }
+
+    #section3 {
+        height: fit-content;
+    }
+
+    #subscription-1 {
+        width: 20rem;
+        margin-bottom: 5rem;
+    }
+
+    #subscription-1 button {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    #subscription-2 {
+    width: 20rem;
+    }
+
+    #subscription-2 button {
+    width: 80%;
+    font-size: 1.5rem;
+    }
+
+    #subscription-3 {
+    width: 20rem;
+    }
+
+    #subscription-3 button {
+    width: 80%;
+    font-size: 1.5rem;
+    }
+
+    /* FOOTER */
+
+    #footer {
+        position: relative;
+        height: fit-content;
+        padding-bottom: 2rem;
+    }
+
+    #footer-right {
+        flex-direction: column;
+        margin-top: 2.5rem;
+        margin-left: 1rem;
+        gap: 1rem;
+    }
+
+    .footer-right-text {
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+
+
+    /* ORARI */
+
+    #orari-table-parent {
+        overflow-x: auto;
+    }
+
+    th {
+        font-size: 1.5rem;
+        padding: 0.6rem 1rem;
+    }
+
+    td {
+        font-size: 1.5rem;
+        padding: 0.6rem 1rem;
+    }
+    
+
+    /* KONTAKTI */
+
+    #kontakti-grid {
+        grid-template-columns: 1fr ;
+    }
+
+    #kontakti-left {
+        margin-left: 1rem;
+        width: 60%;
+        border-right: none;
+    }
+
+    #iframe {
+        margin-top: 2rem;
+    }
+
+    #kontakti-left-info-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .kontakti-form {
+        width: 15rem;
+    }
+
+    #kontakti-name-input {
+        max-width: 6rem;
+        margin-right: 1rem;
+    }
+
+    #kontakti-lname-input {
+        max-width: 6rem;
+    }
+
+    #subjekti-form {
+        width: 17rem;
+    }
+
+    #mesazhi-form {
+        min-width: 15rem;
+    }
+
+    /* BMI CALC */
+
+    #BMI-main-container {
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 3rem;
+    }
+
+    #BMI-calc {
+        margin-top: 8rem;
+        width: 18rem;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .input-info {
+        margin-top: 1rem;
+        width: 16rem;
+    }
+
+    #input-gender {
+        margin-top: 1rem;
+        width: 16rem;
+    }
+
+    #BMI-right {
+        width: 18rem;
+        height: fit-content;
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    #bmi-nr {
+        font-size: 2rem;
+    }
+
+    #bmi-nr-text {
+        font-size: 1.1rem;
+    }
+
+    #bmi-text {
+        font-size: 0.6rem;
+        margin-left: 0.6rem;
+    }
+    /* SHOP */
+
+    #shop-main-container {
+        height: fit-content;
+    }
+
+    #shop-header {
+        font-size: 2rem;
+        margin-left: 3rem;
+        margin-top: 8rem;
+    }
+
+    #shop-grid {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 2rem;
+    }
+
+    .shop-card-mid p {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+    .shop-card-mid h5 {
+        font-size: 0.6rem;
+    }
+
+    .shop-card-bottom button {
+        font-size: 0.8rem;
+        padding: 0.2rem 1.2rem;
+    }
+
+}
+
+/* TABLETS */
+@media (max-width: 1024px) {
+
+    /* SECTION 1*/
+
+    #main-page {
+        flex-direction: column;
+    }
+
+    #main-page-left {
+        padding-top: 0;
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #main-page-right {
+        margin-top: 1.5rem;
+        justify-content: center;
+    }
+
+    #view-programs-button {
+        padding: 12px 50px;
+        margin-bottom: 2.5rem;
+    }
+
+    #start-training-button {
+        padding: 12px 50px;
+        font-size: 2rem;
+    }
+
+    .carousel {
+        height: 12rem;
+        bottom: 2rem;
+    }
+
+    #section1 {
+        height: 130vh;
+    }
+
+    /* SECTION 2 */
+
+    #section2 {
+        height: fit-content;
+    }
+
+    #programs-grid {
+        grid-template-columns: 1fr;
+        width: 90%;
+        height: auto;
+        margin-left: 1rem;
+        row-gap: 2.5rem;
+    }
+
+    .programs-grid-items {
+        height: 28rem;
+        border-left: 0.7px solid rgb(78, 78, 78);
+    }
+    /* SECTION 3 */
+
+    #subscription-container {
+        flex-direction: column;
+    }
+
+    #section3 {
+        height: fit-content;
+    }
+
+    #subscription-1 {
+        width: 25rem;
+        margin-bottom: 5rem;
+    }
+
+    #subscription-1 button {
+        width: 80%;
+        font-size: 1.7rem;
+    }
+
+    #subscription-2 {
+        width: 25rem;
+    }
+
+    #subscription-2 button {
+        width: 80%;
+        font-size: 1.7rem;
+    }
+
+    #subscription-3 {
+        width: 25rem;
+    }
+
+    #subscription-3 button {
+        width: 80%;
+        font-size: 1.7rem;
+    }
+
+    /* FOOTER */
+
+    #footer {
+        position: relative;
+        height: fit-content;
+        padding-bottom: 2rem;
+    }
+
+    #footer-right {
+        flex-direction: column;
+        margin-top: 2.5rem;
+        margin-left: 2rem;
+        gap: 1rem;
+    }
+
+    .footer-right-text {
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+
+    /* ORARI */
+
+
+    #orari-table-parent {
+        overflow-x: auto;
+    }
+
+    th {
+        font-size: 1.5rem;
+        padding: 0.6rem 1rem;
+    }
+
+    td {
+        font-size: 1.5rem;
+        padding: 0.6rem 1rem;
+    }
+    
+
+    /* KONTAKTI */
+
+    #kontakti-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #kontakti-left {
+        margin-left: 1rem;
+        width: 70%;
+        border-right: none;
+    }
+
+    #iframe {
+        margin-top: 2rem;
+    }
+
+    #kontakti-left-info-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kontakti-form {
+        width: 18rem;
+    }
+
+    #kontakti-name-input {
+        max-width: 8rem;
+        margin-right: 1rem;
+    }
+
+    #kontakti-lname-input {
+        max-width: 8rem;
+    }
+
+    #subjekti-form {
+        width: 20rem;
+    }
+
+    #mesazhi-form {
+        min-width: 18rem;
+    }
+
+    /* BMI CALC */
+
+    #BMI-main-container {
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 3rem;
+    }
+
+    #BMI-calc {
+        margin-top: 9rem;
+        width: 25rem;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .input-info {
+        margin-top: 1rem;
+        width: 22rem;
+    }
+
+    #input-gender {
+        margin-top: 1rem;
+        width: 22rem;
+    }
+
+    #BMI-right {
+        width: 25rem;
+        height: fit-content;
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    #bmi-nr {
+        font-size: 3rem;
+    }
+
+    #bmi-nr-text {
+        font-size: 1.5rem;
+    }
+
+    #bmi-text {
+        font-size: 0.75rem;
+        margin-left: 0.8rem;
+    }
+
+    /* SHOP */
+
+    #shop-main-container {
+        height: fit-content;
+    }
+
+    #shop-header {
+        font-size: 2.5rem;
+        margin-left: 3rem;
+        margin-top: 8rem;
+    }
+
+    #shop-grid {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 2rem;
+    }
+
+    .shop-card-mid p {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .shop-card-mid h5 {
+        font-size: 0.7rem;
+    }
+
+    .shop-card-bottom button {
+        font-size: 0.9rem;
+        padding: 0.3rem 1.4rem;
+    }
+
+}
+
+/* SMALL PHONES */
+@media (max-width: 400px) {
+
+    /* SECTION 1 */
+
+    #main-page {
+        flex-direction: column;
+    }
+
+    #main-page-left {
+        padding-top: 0;
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #main-page-right {
+        margin-top: 0.5rem;
+        justify-content: center;
+    }
+
+    #view-programs-button {
+        margin-top: 2rem;
+        padding: 8px 30px;
+        margin-bottom: 2rem;
+    }
+
+    #start-training-button {
+        padding: 8px 30px;
+        font-size: 2rem;
+    }
+
+    .carousel {
+        height:10rem;
+        bottom: 4.5rem;
+    }
+
+    #section1 {
+        height: 130vh;
+    }
+
+    /* SECTION 2 */
+
+    #section2 {
+        height: fit-content;
+    }
+
+
+    #programs-grid {
+        grid-template-columns: 1fr;
+        width: 95%;
+        margin-left: 1rem;
+        row-gap: 1.5rem;
+    }
+
+    .programs-grid-items {
+        height: 22rem;
+        border-left: 0.7px solid rgb(78, 78, 78);
+    }
+
+    /* SECTION 3 */
+
+    #subscription-container {
+        flex-direction: column;
+    }
+
+    #section3 {
+        height: fit-content;
+    }
+
+    #subscription-1 {
+        width: 17rem;
+        margin-bottom: 4rem;
+    }
+
+    #subscription-1 button {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+
+    #subscription-2 {
+        width: 17rem;
+    }
+
+    #subscription-2 button {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+
+    #subscription-3 {
+        width: 17rem;
+    }
+
+    #subscription-3 button {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+
+    /* FOOTER */
+
+    #footer {
+        position: relative;
+        height: fit-content;
+        padding-bottom: 2rem;
+    }
+
+    #footer-right {
+        flex-direction: column;
+        margin-top: 2.5rem;
+        margin-left: 0.5rem;
+        gap: 1rem;
+    }
+
+    .footer-right-text {
+        margin-left: 0.5rem;
+        margin-right: 0;
+    }
+
+    /* ORARI */
+
+    #orari-table-parent {
+        overflow-x: auto;
+    }
+
+    th {
+        font-size: 1.5rem;
+        padding: 0.3rem 0.4rem;
+    }
+
+    td {
+        font-size: 1.5rem;
+        padding: 0.3rem 0.4rem;
+    }
+
+    /* KONTAKTI */
+
+    #kontakti-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #kontakti-left {
+        margin-left: 0.5rem;
+        width: 55%;
+        border-right: none;
+    }
+
+    #iframe {
+        margin-top: 2rem;
+    }
+
+    #kontakti-left-info-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kontakti-form {
+        width: 13rem;
+    }
+
+    #kontakti-name-input {
+        max-width: 5rem;
+        margin-right: 0.8rem;
+    }
+
+    #kontakti-lname-input {
+        max-width: 5rem;
+    }
+
+    #subjekti-form {
+        width: 15rem;
+    }
+
+    #mesazhi-form {
+        min-width: 13rem;
+    }
+
+    /* BMI CALC */
+
+    #BMI-main-container {
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 3rem;
+    }
+
+    #BMI-calc {
+        margin-top: 8rem;
+        width: 18rem;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .input-info {
+        margin-top: 1rem;
+        width: 16rem;
+    }
+
+    #input-gender {
+        margin-top: 1rem;
+        width: 16rem;
+    }
+
+    #BMI-right {
+        width: 18rem;
+        height: fit-content;
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    #bmi-nr {
+        font-size: 2rem;
+    }
+
+    #bmi-nr-text {
+        font-size: 1.1rem;
+    }
+
+    #bmi-text {
+        font-size: 0.6rem;
+        margin-left: 0.6rem;
+    }
+    /* SHOP */
+
+    #shop-main-container {
+        height: fit-content;
+    }
+
+    #shop-header {
+        font-size: 1.6rem;
+        margin-left: 2rem;
+        margin-top: 7rem;
+    }
+
+    #shop-grid {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 1rem;
+    }
+
+    .shop-card-mid p {
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .shop-card-mid h5 {
+        font-size: 0.55rem;
+    }
+
+    .shop-card-bottom button {
+        font-size: 0.7rem;
+        padding: 0.15rem 1rem;
+    }
+
+}
